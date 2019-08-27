@@ -1,0 +1,9 @@
+Curso profesional de Git y GitHub (aprender a manejar versiones)
+Curso de Desarrollo Web Online (fundamentos de html y css)
+Curso de HTML y CSS (aprender a diseñar y programar un proyecto)
+Curso de Responsive Design (buenas practicas para responsive)
+Curso de CSS Grid Layout (lo ultimo en css)
+Curso de animaciones ( Jugar con css)
+Fundamentos de JavaScript ( entender javascript y tomarle cariño)
+Curso de jQuery a JavaScript (reemplazar lo facil por lo responsable )
+Luego preprocesadores, frameworks de css, testing y especializarme en react y vue pero en paralelo con la carrera de UX
