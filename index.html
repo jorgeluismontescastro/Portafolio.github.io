@@ -3,24 +3,31 @@
   <head>
     <title>Bienvenidos a mi Portafolio</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <style>
+      header
+      {
+        background:green;
+      }
+    </style>
   </head>
   <body>
-    <header>
+    <header style="color:red; background:blue;">
       <div>
         <figure>
-          <img src="images/github-octocat.png" width=200 alt="Logo de Github"/>
+          <img src="images/github-octocat.png" width=500 alt="Logo de Github"/>
         </figure>
       </div>
       <nav>
         <ol>
           <li>
-            <a href="">Portafolio</a>
+            <a href="#portafolio">Portafolio</a>
           </li>
           <li>
-            <a>Experiencia</a>
+            <a href="#experiencia">Experiencia</a>
           </li>
           <li>
-            <a>Trabajemos Juntos</a>
+            <a href="#trabajemos">Trabajemos Juntos</a>
           </li>
         </ol>
       </nav>
@@ -30,9 +37,9 @@
         Hola Soy Jorge Luis Montes Castro estudiante de Platzi desarrollador Junior en Frontend y Backend.
         Apasionado por la tecnologia, el diseño la programación y el Desarrollo de Web, de aplicaciones y videojuegos. 
       </h1>
-      <img src="images/javascript.gif" width=300 alt="Javascript"/>
+      <img src="images/javascript.gif" width=1000 alt="Javascript"/>
     </section>
-    <section>
+    <section id="portafolio">
       <h2>Portafolio (Proyectos realizados)</h2>
       <article>
         <h3>Primera aplicacion Android</h3>
@@ -42,17 +49,23 @@
         <p>Aplicacion de preguntas y respuestas</p>        
       </article>
     </section>
-    <section>
+    <section id="experiencia">
       <h2>Acerca de mí</h2>
       <article>
         <figure>
-          <img src="images/android-logo.png" width=200 alt="Android Logo">
+          <img src="images/android-logo.png" width=900 alt="Android Logo">
         </figure>
         <h2>Interes Personales</h2>
         <p>Fan de Marvel, el futbol, los videojuegos, la musica y el cine</p>
       </article>
     </section>
-    <section>Contactos</section>
+    <section id="trabajemos">
+      <form action="/suscripcion">
+        <h3>Cuentame sobre tu proyecto</h3>
+        <input type="text" placeholder="Dejanos tu email" id="email">
+        <button>ENVIAR</button> 
+      </form>
+    </section>
     <footer>footer</footer>
   </body>
 </html>
