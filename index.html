@@ -7,35 +7,37 @@
     <link rel="stylesheet" href="css/estilos.css"> 
   </head>
   <body>
+    <!--Esta es la cabecera y menu de navegacion del sitio-->
     <header class="cabecera">
       <div>
         <figure class="logo">
-          <!--<img src="images/github-octocat.png" width=500 alt="Logo de Github"/>-->
+          <img src="images/github.png" width=100px alt="Logo de Github"/>
         </figure>
       </div>
       <nav class="menu">
         <ol>
           <li>
-            <a class="link" href="#portafolio">Portafolio</a>
+            <a class="link" href="#Portafolio">Portafolio</a>
           </li>
           <li>
-            <a class="link" href="#experiencia">Experiencia</a>
+            <a class="link" href="#Experiencia">Experiencia</a>
           </li>
           <li>
-            <a class="link" href="#trabajemos">Trabajemos Juntos</a>
+            <a class="link" href="#Trabajemos">Trabajemos Juntos</a>
           </li>
         </ol>
       </nav>
     </header>
+    <!--Aqui inicia el cuerpo del sitio donde se detalla la informacion a mostrar-->
     <section class="hero">
       <h1>
-        Hola Soy Jorge Luis Montes Castro estudiante de Platzi desarrollador Junior en Frontend y Backend.
-        Apasionado por la tecnologia, el diseño la programación y el Desarrollo de Web, de aplicaciones y videojuegos. 
+        Hola Soy Jorge Luis Montes Castro estudiante de Platzi desarrollador Full Stack Junior.
       </h1>
       <img src="images/javascript.gif" width=500px alt="Javascript"/>
     </section>
     <section id="portafolio" class="portfolio">
       <h2 class=portfolio-title>Portafolio (Proyectos realizados)</h2>
+      <p>En esta seccion detallaré los proyectos realizados con los conocimientos adquiridos.</p>
       <articlev class="app">
         <h3 class="app-title">Primera aplicacion Android</h3>
         <h6 class="app-subtitle">Hecha en Java Nativo y Kotlin</h6>
@@ -47,20 +49,32 @@
     <section id="experiencia" class="experience">
       <h2 class="experience-title">Acerca de mí</h2>
       <article>
-        <figure class="portfolio-image">
-          <img src="images/android-logo.png" width=500 alt="Android Logo">
+        <figure class="experience-image">
+          <img src="images/android.png" width=500 alt="Android Logo">
         </figure>
         <h2>Interes Personales</h2>
         <p>Fan de Marvel, el futbol, los videojuegos, la musica y el cine</p>
+        <p>Apasionado por la tecnologia, el diseño la programación y el Desarrollo de Web, de aplicaciones y videojuegos.</p>
       </article>
     </section>
-    <section id="trabajemos">
+    <section id="trabajemos" class="contact">
       <form action="/suscripcion">
         <h3>Cuentame sobre tu proyecto</h3>
         <input type="text" placeholder="Dejanos tu email" id="email">
         <button>ENVIAR</button> 
       </form>
     </section>
-    <footer>footer</footer>
+    <!--Aqui se ubica el footer donde se coloca los datos de de3rechos y contacto-->
+    <footer class="final">
+      <div>
+        <figure>
+          <img src="images/youtube.svg" width=40px alt="Canal de Youtube" />
+          <img src="images/linkedin.svg" width=40px alt="linkedin" />
+          <img src="images/twitter.svg" width=40px alt="Twitter" />
+          <img src="images/instagram.svg" width=40px alt="instagram" />
+          <img src="images/facebook.svg" width=40px alt="instagram" />
+        </figure>
+      </div>
+    </footer>
   </body>
 </html>

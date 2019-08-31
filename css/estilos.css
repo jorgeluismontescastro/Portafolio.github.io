@@ -1,44 +1,31 @@
-body
-{
-  font-family:'Cookie', cursive;
-}
-
-p
-{
-  text-transform: lowercase;
-}
-
-h1, h2, h3, h4, h5, h6
-{
-  font-family: 'Arial', cursive;
-}
-
-section
-{
-  font: weight 1bold;;
-  font-style: italic;
-  margin: 10px, 11px, 12px;
-}
-
-
 .cabecera
 {
-  width: 500px;
-  background-image: url('../images/github-octocat.png');
-  background-size:200px 50px;
-  background-repeat: no-repeat;
-  background-position-x: -50px;
-  color:#FFFFFF;
+  background-color: #FFF000;
+  color: rgb(000, 224, 224);
 }
 
-.cabecera a
+.hero
 {
-  color:0000FF;
-  text-decoration: none;
+  background-color: pink;
+  color:red;
 }
 
-.menu
+.portfolio
 {
-  width:500px;
-  text-align: right;
-  text-orientation: sideways-right;
+  background-color: lightgreen;
+}
+
+.experience
+{
+  background-color: tomato;
+}
+
+.contact
+{
+  background-color: teal;
+}
+
+.final
+{
+  background-color: #00AAAA;
+}
