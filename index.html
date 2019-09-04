@@ -3,17 +3,15 @@
   <head>
     <title>Bienvenidos a mi Portafolio</title>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Roboto:400,400i,700|Titillium+Web:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css"> 
   </head>
   <body>
     <!--Esta es la cabecera y menu de navegacion del sitio-->
     <header class="cabecera">
-      <div>
-        <figure class="logo">
-          <img src="images/github.png" width=100px alt="Logo de Github"/>
-        </figure>
-      </div>
+      <figure class="logo">
+        <img src="images/marvel.PNG" width=100px alt="Logo de Github"/>
+      </figure>
       <nav class="menu">
         <ol>
           <li>
@@ -30,50 +28,138 @@
     </header>
     <!--Aqui inicia el cuerpo del sitio donde se detalla la informacion a mostrar-->
     <section class="hero">
-      <h1>
-        Hola Soy Jorge Luis Montes Castro estudiante de Platzi desarrollador Full Stack Junior.
-      </h1>
-      <img src="images/javascript.gif" width=500px alt="Javascript"/>
+      <div>
+        <h1>
+          Hola Soy <strong>Jorge Luis Montes Castro</strong><br />estudiante de <strong>Platzi</strong><br /> futuro desarrollador<strong> Full Stack.</strong>
+        </h1>
+      </div>
+      <div>
+        <figure class="imgjavascript">
+        </figure>
+      </div>   
     </section>
+      <!--<img src="images/javascript.gif" width=500px alt="Javascript"/>-->
     <section id="portafolio" class="portfolio">
-      <h2 class=portfolio-title>Portafolio (Proyectos realizados)</h2>
-      <p>En esta seccion detallaré los proyectos realizados con los conocimientos adquiridos.</p>
-      <articlev class="app">
-        <h3 class="app-title">Primera aplicacion Android</h3>
-        <h6 class="app-subtitle">Hecha en Java Nativo y Kotlin</h6>
-        <p class="app-date"><small><strong>Fecha:</strong> 01/09/2019</small></p>
-        <p class="app-url"><small><strong>Puedes encontrarla en:</strong> ruta repo github page</small></p>
-        <p class="app-description">Aplicacion de preguntas y respuestas</p>        
+      <h2>Portafolio (Proyectos realizados)
+      </h2>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="appandroid-title">Primera aplicaci&oacute;n Android.
+          </h3>
+          <h6 class="appandroid-subtitle">Hecha en Java Nativo y Kotlin.
+          </h6>
+          <p class="appandroid-date"><small><strong>Fecha:</strong>01/09/2019</small>
+          </p>
+          <p class="appandroid-url"><small><strong>Puedes encontrarla en:</strong> ruta repo github page.</small>
+          </p>
+          <p class="appandroid-description">Aplicaci&oacute;n de preguntas y respuestas.
+          </p>        
+        </div>
+        <figure class="appandroid-image">
+            <img src="images/android.png" width=500 alt="Android Logo">
+        </figure>
       </article>
+      <article class="appios">
+          <div>
+            <h3 class="appios-title">Primera aplicaci&oacute;n en IOS.
+            </h3>
+            <h6 class="appios-subtitle">Hecha en Swift y Objective-C.
+            </h6>
+            <p class="appios-date"><small><strong>Fecha: </strong> 01/09/2019</small>
+            </p>
+            <p class="appios-url"><small><strong>Puedes encontrarla en:</strong> ruta repo github page.</small>
+            </p>
+            <p class="appios-description">Aplicaci&oacute;n de red social.
+            </p>        
+          </div>
+          <figure class="appios-image">
+              <img src="images/ios.png" width=200 alt="IOS Logo">
+          </figure>
+        </article>
+        <article class="videogame2d">
+            <div>
+              <h3 class="videogame2d-title">Primer videojuego 2d.
+              </h3>
+              <h6 class="videogame2d-subtitle">Hecha en Javascript y C#.
+              </h6>
+              <p class="videogame2d-date"><small><strong>Fecha:</strong> 01/09/2019</small>
+              </p>
+              <p class="videogame2d-url"><small><strong>Puedes encontrarla en:</strong> ruta repo github page.</small>
+              </p>
+              <p class="videogame2d-description">Videojuego de plataforma.
+              </p>        
+            </div>
+            <figure class="videogame2d-image">
+                <img src="images/videogame2d.jpg" width=300 alt="Video Game 2D">
+            </figure>
+          </article>
+          <article class="videogame3d">
+              <div>
+                <h3 class="videogame3d-title">Primer videojuego 3d en Unity.
+                </h3>
+                <h6 class="videogame3d-subtitle">Hecha en Unity.
+                </h6>
+                <p class="videogame3d-date"><small><strong>Fecha:</strong> 01/09/2019</small>
+                </p>
+                <p class="videogame3d-url"><small><strong>Puedes encontrarla en:</strong> ruta repo github page.</small>
+                </p>
+                <p class="videogame3d-description">Videojuego first person shooter.
+                </p>        
+              </div>
+              <figure class="videogame3d-image">
+                  <img src="images/videogame3d.jpg" width=300 alt="Video Game 3D">
+              </figure>
+            </article>
     </section>
     <section id="experiencia" class="experience">
-      <h2 class="experience-title">Acerca de mí</h2>
       <article>
-        <figure class="experience-image">
-          <img src="images/android.png" width=500 alt="Android Logo">
-        </figure>
-        <h2>Interes Personales</h2>
-        <p>Fan de Marvel, el futbol, los videojuegos, la musica y el cine</p>
-        <p>Apasionado por la tecnologia, el diseño la programación y el Desarrollo de Web, de aplicaciones y videojuegos.</p>
+        <div>
+          <h2 class="experience-title">Acerca de m&iacute;
+          </h2>
+        </div>
+      </article>
+      <article>
+        <div>
+          <figure class="experience-image">
+            <img src="images/android.png" width=500 alt="Android Logo">
+          </figure>
+        </div>
+        <div>
+          <h2>Inter&eacute;ses Personales</h2>
+          <p>Fan de Marvel, el f&uacute;tbol, los videojuegos, la m&uacute;sica y el cine</p>
+          <p>Apasionado por la tecnolog&iacute;a, el diseño la programaci&oacute;n y el Desarrollo de p&acute;ginas Web, de aplicaciones y videojuegos.</p>
+        </div>
       </article>
     </section>
     <section id="trabajemos" class="contact">
-      <form action="/suscripcion">
-        <h3>Cuentame sobre tu proyecto</h3>
-        <input type="text" placeholder="Dejanos tu email" id="email">
-        <button>ENVIAR</button> 
-      </form>
+      <article>
+        <div>
+          <form action="/suscripcion">
+            <h3>Dejame tu opini&oacute;n</h3>
+            <input type="text" placeholder="Dejanos tu email" id="email">
+            <button>ENVIAR</button> 
+          </form>
+        </div>
+        <div>
+            <figure>
+                <img src="images/youtube.svg" width=40px alt="Canal de Youtube" />
+                <img src="images/linkedin.svg" width=40px alt="linkedin" />
+                <img src="images/twitter.svg" width=40px alt="Twitter" />
+                <img src="images/instagram.svg" width=40px alt="instagram" />
+                <img src="images/facebook.svg" width=40px alt="instagram" />
+              </figure>
+        </div>
+      </article>
     </section>
     <!--Aqui se ubica el footer donde se coloca los datos de de3rechos y contacto-->
     <footer class="final">
       <div>
-        <figure>
-          <img src="images/youtube.svg" width=40px alt="Canal de Youtube" />
-          <img src="images/linkedin.svg" width=40px alt="linkedin" />
-          <img src="images/twitter.svg" width=40px alt="Twitter" />
-          <img src="images/instagram.svg" width=40px alt="instagram" />
-          <img src="images/facebook.svg" width=40px alt="instagram" />
-        </figure>
+        <p>Copyright Montes Industries ©
+        <img src="images/descarga.png" width=100px alt="logo empresa"/>
+        </p>
+      </div>
+      <div>
+          <a href="https://twitter.com/albafika123"> Design by @albafika123</a>
       </div>
     </footer>
   </body>
