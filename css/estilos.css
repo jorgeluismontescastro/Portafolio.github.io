@@ -1,15 +1,47 @@
-.cabecera
+body
+{
+  font-family: 'Abel', sans-serif;
+  margin:0px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+}
+
+h1
+{
+  font-size: 30px;
+  margin: 0px;
+  color:white;
+}
+
+h1 strong
+{
+  color: #026fff;
+}
+
+h2
+{
+  color:#026fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.header
 {
   display: flex;
   height: 70px;
   justify-content: space-between;
-  border: 5px solid red;
   background-color: black;
   color: white;
   font-family: 'Titillium Web', sans-serif;
 }
 
-.cabecera a
+.header a
 {
   display:flex;
   padding: 0px 5px;
@@ -20,14 +52,20 @@
   text-decoration: none; 
 }
 
+.header ol
+{
+  display:flex;
+  height: inherit;
+}
+
 .menu
 {
   height: inherit;
 }
 
-.cabecera ol
+.menu ol li
 {
-  display:flex;
+  list-style: none;
   height: inherit;
 }
 
@@ -42,36 +80,29 @@ figure, nav, ol, li
   padding: 0px;
 }
 
-.menu ol li
-{
-  list-style: none;
-  height: inherit;
-}
-
 .hero
 {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: black;
   color:white;
-  display:flex;
-  justify-content: space-between;
-  border: 5px solid blue;
 }
 
-.imgjavascript
+
+.hero-image
 
 {
-  border: 5px solid green;
-  background-image: url('../images/imim.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 350px;
-  height: 200px;
+  padding-right: 200px;
+  object-fit: cover;
 }
+
 
 .portfolio
 {
-  border: 5px solid orange;
-  background-color: rgb(250, 253, 255);
+  background: #fafafa;
+  padding: 20px;
 }
 
 .portfolio h2
@@ -83,227 +114,231 @@ figure, nav, ol, li
 .project
 {
   font-family: 'Titillium Web', sans-serif;
+  background: white;
   display:flex;
-  border: 1px solid gray;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
   border-radius: 10px;
+  padding:20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   ;
+}
+.project-subtitle, .project-date, .project-url
+{
+  font-family: 'Abel', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0px ;
+}
+
+.project-description
+{
+  font-size: 20px;
+}
+
+.project strong
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+.project-title
+{
+  font-size: 30px;
+  font-family:'Abel', sans-serif;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .project-details
 {
+  width:500px;
+}
+
+.project-imageContainer
+{
+  width: 300px;
+}
+
+.canal-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.canal-list-title {
+  margin-left: 20px;
+}
+.canal { 
+  margin: 10px;
+  width: 450px;
+  flex-shrink: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+}
+.canal img {
+  width: 550px;
+  height: 300px;
+  object-fit: cover;
+}
+.canal-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
   background-color: white;
-  width:500px;
-  margin: 10px;
-  padding: 10px
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.canal-description {
+  text-align: center;
 }
 
-.appandroid-image
-{
-  display:flex;
-  width: 500px;
-}
-
-.appios
-{
-  font-family: 'Titillium Web', sans-serif;
-  display:flex;
-  border: 1px solid gray;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px
-}
-
-.appios-image
-{
-  width:500px;
-}
-
-.videogame2d
-{
-  font-family: 'Titillium Web', sans-serif;
-  display:flex;
-  border: 1px solid gray;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px
-}
-
-.videogame2d-image
-{
-  width:500px;
-}
-
-.videogame3d
-{
-  font-family: 'Titillium Web', sans-serif;
-  display:flex;
-  border: 1px solid gray;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px
-}
-
-.videogame3d-image
-{
-  width:500px;
-}
-
-.experience
-{
-  margin: 10px;
-  padding: 10px;
-  font-family: 'Abel', sans-serif;
-  background-color: black;
-  border: 5px solid orangered;
+.canal-url {
+  color: #056fff;
+  font-weight: bold;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .contact
 {
-  border: 5px solid brown;
+  background-color: #056fff;
+  color: white;
+  height: 200px;
   display: flex;
-  color:white;
-  background-color: black;
-  font-family: 'Abel', sans-serif;
-  background-color: rgb(121, 121, 241);
+  align-items: center;
+  justify-content: space-between;
 }
 
-.final
+.form-email
+{
+  margin-bottom: 40px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.form-email input
+{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../images/mail.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.redes-link
+{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.redes-link.github 
+{
+  background-image: url('../images/github.svg');
+}
+
+.redes-link.linkedin 
+{
+  background-image: url('../images/_linkedin.svg');
+}
+.redes-link.facebook 
+{
+  background-image: url('../images/facebook.svg');
+}
+
+.redes-link.instagram 
+{
+  background-image: url('../images/instagram.svg');
+}
+
+.redes-link.twitter
+{
+  background-image: url('../images/twitter.svg');
+}
+
+.redes-link.youtube
+{
+  background-image: url('../images/youtube.png');
+}
+
+.footer
 {
   font-family: 'Abel', sans-serif;
   color:white;
   background-color: black;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border: 5px solid rgb(44, 80, 241);
+  justify-content: space-between;
 }
 
-.final img
+.footer img
 {
   vertical-align: middle;
 }
 
-.final a
+.footer a
 {
   color: inherit;
   text-decoration: none;
 }
 
-/* body
+.personal
 {
+  margin:30px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  height:200px;
+}
+
+.personal-title
+{
+  width: 300px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+.personal-description
+{
+  width: 600px;
   margin:0px;
+  font-size: 20px;
+  display: inline;
+  text-align: justify;
 }
 
-.cabecera
+.personal-imageContainer
 {
-  display:flex;
-  background-color: #000000;
-  font-family: 'Roboto', sans-serif;
-  justify-content: space-between;
-  height: 90px;
+  width: 300px;
 }
 
-.cabecera ol
-
+.personal-image
 {
-  display: flex;
-  height: inherit;
+  width:150px;
+  height: 150px;
+  border:2px solid gray;
+  border-radius: 100%;
+  
 }
-
-.cabecera ol li
-
-{
-  display: flex;
-  height: 90px;
-}
-
-.menu
-
-{
-  height: inherit;
-}
-
-.cabecera a
-
-{
-  display: flex;
-  align-items: center;  
-  padding: 0px 5px;
-}
-
-
-ol, ul
-{
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-figure
-{
-  margin: 10px;px;
-}
-
-.imgjavascript
-{
-  height:530px;
-  width:230px;
-  background-image: url('../images/javascript.gif');
-  background-position-x: right;
-  background-size: 530px 230px;
-  background-repeat: no-repeat;
-  background-color: pink;
-}
-
-.hero
-{
-  display: flex;
-  justify-content: space-between;
-  border: 5px solid orange;
-  height: 500px;
-  width: 500px;
-}
-
-h1
-{
-  margin: 0px;
-  color: maroon;
-  border: 3px gray solid;
-  border-radius: 10px;
-}
-
-
-h1 strong
-{
-  color: green;
-}
-
-.portfolio
-{
-  background-color: lightgreen;
-  border:5px#000000 solid;
-  border-radius: 10px;
-
-}
-
-.experience
-{
-  border: 5px solid deeppink;
-  background-color: tomato;
-}
-
-.contact
-{
-  border: 5px solid lightgray;
-  background-color: teal;
-}
-
-
-body nav ol li a
-{
-  color:white;
-  text-decoration: none;
-  text-transform: initial;
-  letter-spacing: 2px;
-  font-family: 'Arial', sans-serif;
-  font-size: 12px; */
