@@ -253,12 +253,12 @@ figure, nav, ol, li
 
 .redes-link.github 
 {
-  background-image: url('../images/github.svg');
+  background-image: url('../images/__github.svg');
 }
 
 .redes-link.linkedin 
 {
-  background-image: url('../images/_linkedin.svg');
+  background-image: url('../images/linkedin.png');
 }
 .redes-link.facebook 
 {
@@ -341,4 +341,15 @@ figure, nav, ol, li
   border:2px solid gray;
   border-radius: 100%;
   
+}
+
+.container
+{
+  width: 900px;
+  margin: 0 auto;
+  height: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  display: inherit;
+  flex-wrap: inherit;
 }
