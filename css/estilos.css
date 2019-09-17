@@ -27,8 +27,8 @@ h2
   color:#026fff;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 25px;
-  margin-bottom: 40px;
+  font-size: 1.6em;
+  margin-bottom: 2.5em;
 }
 
 .header
@@ -39,6 +39,7 @@ h2
   background-color: black;
   color: white;
   font-family: 'Titillium Web', sans-serif;
+  flex-wrap: wrap;
 }
 
 .header a
@@ -71,7 +72,7 @@ h2
 
 .logo
 {
-  padding: 10px;
+  padding: 5px;
 }
 
 figure, nav, ol, li
@@ -88,6 +89,7 @@ figure, nav, ol, li
   align-items: center;
   background-color: black;
   color:white;
+  flex-wrap: wrap;
 }
 
 
@@ -123,19 +125,20 @@ figure, nav, ol, li
   padding:20px;
   margin-top: 20px;
   margin-bottom: 5px;
-  ;
+  flex-wrap:wrap;
 }
 .project-subtitle, .project-date, .project-url
 {
   font-family: 'Abel', sans-serif;
-  font-size: 14px;
+  font-size: 1.1em;
   font-weight: bold;
-  margin: 10px 0px ;
+  margin: 10px 0px 0px 6px;
 }
 
 .project-description
 {
-  font-size: 20px;
+  font-size: 1.1em;
+  margin: 10px 0px 0px 6px;
 }
 
 .project strong
@@ -145,21 +148,27 @@ figure, nav, ol, li
 
 .project-title
 {
-  font-size: 30px;
+  font-size: 2.4em;
+  margin: 5px;
   font-family:'Abel', sans-serif;
   font-weight: bold;
-  margin-top: 0px;
-  margin-bottom: 10px;
 }
 
 .project-details
 {
-  width:500px;
+  width:50%;
 }
 
 .project-imageContainer
 {
-  width: 300px;
+  width: 50%;
+  text-align: right;
+}
+
+.project-imageContainer img
+{
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 .canal-list {
@@ -170,8 +179,8 @@ figure, nav, ol, li
   margin-left: 20px;
 }
 .canal { 
-  margin: 10px;
-  width: 450px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0px;
   border-radius: 10px;
   overflow: hidden;
@@ -211,6 +220,7 @@ figure, nav, ol, li
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .form-email
@@ -288,6 +298,7 @@ figure, nav, ol, li
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer img
@@ -322,10 +333,11 @@ figure, nav, ol, li
 
 .personal-description
 {
-  width: 600px;
-  margin:0px;
-  font-size: 20px;
-  display: inline;
+  width: 100%;
+  margin:0em 1em;
+  font-size: 1.5em;
+  padding-bottom: 
+  /* display: inline */
   text-align: justify;
 }
 
@@ -336,8 +348,8 @@ figure, nav, ol, li
 
 .personal-image
 {
-  width:150px;
-  height: 150px;
+  width: 70%;;
+  /* height: 150px; */
   border:2px solid gray;
   border-radius: 100%;
   
@@ -345,7 +357,8 @@ figure, nav, ol, li
 
 .container
 {
-  width: 900px;
+  max-width: 1000px;
+  flex:1;
   margin: 0 auto;
   height: inherit;
   justify-content: inherit;
@@ -353,3 +366,229 @@ figure, nav, ol, li
   display: inherit;
   flex-wrap: inherit;
 }
+
+@media screen and (max-width:1024px)
+{
+  .container
+  {
+    padding: 0em .9em;
+  }
+  /* .project-details
+  {
+    font-size: 30px;
+  } */
+  .personal
+  {
+    max-width: 1000px;
+    width:90%;
+  }
+}
+
+
+@media screen and (max-width:778px)
+{
+  .project-details
+  {
+    width:50%;
+  }
+  .canal img
+  {
+    width:100%;
+  }
+  .personal
+  {
+    width:80%;
+    height: auto;
+  }
+  .personal-description
+  {
+    font-size: 1.5em;
+  }
+  h2
+{
+  color:#026fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 2.3em;
+}
+.project-title
+{
+  font-size: 1.9em;
+  margin: 5px;
+  font-family:'Abel', sans-serif;
+  font-weight: bold;
+}
+.project-subtitle, .project-date, .project-url
+{
+  font-family: 'Abel', sans-serif;
+  font-size: .85em;
+  font-weight: bold;
+  margin: 10px 0px 0px 6px;
+}
+.project-description
+{
+  font-size: .85em;
+  margin: 10px 0px 0px 6px;
+}
+}
+
+@media screen and (max-width:479px)
+{
+  .header
+  {
+    display: block;
+    height: auto;
+  }
+  .header ol
+  {
+    display: block;
+  }
+  .header ol li
+  {
+    height: 40px;
+  }
+  .header a
+  {
+    justify-content: center;
+  }
+  .header .logo
+  {
+    text-align: center;
+  }
+  .project
+  {
+    display:block;
+  }
+  .project-imageContainer
+  {
+    width:auto;
+    text-align: center;
+  }
+  .project-details
+  {
+    width:auto;
+  }
+  .project-title
+  {
+    font-size: 1.5em;
+    margin: 5px;
+    font-family:'Abel', sans-serif;
+    font-weight: bold;
+  }
+  .project-subtitle, .project-date, .project-url
+  {
+    font-family: 'Abel', sans-serif;
+    font-size: .8em;
+    font-weight: bold;
+    margin: 10px 0px 0px 6px;
+  }
+  .project-description
+  {
+    font-size: .8em;
+    margin: 10px 0px 5px 6px;
+  }
+  .canal
+  {
+    width:auto;
+  }
+  .personal
+  {
+    width:80%;
+    height: auto;
+  }
+  .personal-description
+  {
+    font-size: .8em;
+  }
+  .contact
+  {
+    height: auto;
+    padding:1.5em 0em;
+    text-align: center;
+    display:block;
+  }
+  .form-email button
+  {
+    margin: 1em auto;
+  }
+  .form-email h3
+  {
+    margin-top: 0;
+  }
+  h2
+{
+  color:#026fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 2.1em;
+}
+  }
+
+@media screen and (max-width:320px)
+{
+  .project-details
+  {
+    width:auto;
+  }
+
+  .project img
+  {
+    width:50%;
+    height: 50%;
+  }
+  .canal-detail
+  {
+    margin: -2.5em .5em .5em;
+    padding: 1em;
+  }
+  .personal
+  {
+    width:70%;
+    height: auto;
+  }
+  .personal-description
+  {
+    font-size: .6em;
+  }
+  .contact
+  {
+    height: auto;
+  }
+  .footer
+  {
+    display: block;
+    text-align: center;
+    border:1px solid transparent;
+  }
+  h2
+{
+  color:#026fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .9em;
+  margin-bottom: 1.8em;
+}
+.project-title
+{
+  font-size: 1em;
+  margin: 5px;
+  font-family:'Abel', sans-serif;
+  font-weight: bold;
+}
+.project-subtitle, .project-date, .project-url
+{
+  font-family: 'Abel', sans-serif;
+  font-size: .6em;
+  font-weight: bold;
+  margin: 10px 0px 0px 6px;
+}
+.project-description
+{
+  font-size: .6em;
+  margin: 10px 0px 5px 6px;
+}
+}
+
+
