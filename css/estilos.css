@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6
 
 h1
 {
-  font-size: 30px;
+  font-size: 2em;
   margin: 0px;
   color:white;
 }
@@ -169,6 +169,10 @@ figure, nav, ol, li
 {
   max-width: 100%;
   border-radius: 10px;
+}
+.project-url a
+{
+  color:blue;
 }
 
 .canal-list {
@@ -369,14 +373,33 @@ figure, nav, ol, li
 
 @media screen and (max-width:1024px)
 {
+  .hero
+  {
+    height:auto;
+    position:relative;
+    overflow:hidden;
+    padding:1em;
+  }
+  .hero-image
+  {
+    position:absolute;
+    z-index:0;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    width:100%;
+  }
+  h1
+  {
+    z-index:1;
+    /* top:0px;
+    left:0px; */
+  }
   .container
   {
     padding: 0em .9em;
   }
-  /* .project-details
-  {
-    font-size: 30px;
-  } */
   .personal
   {
     max-width: 1000px;
@@ -387,6 +410,12 @@ figure, nav, ol, li
 
 @media screen and (max-width:778px)
 {
+  
+  h1
+  {
+    font-size: 1.5em;
+    padding-right:2em;
+  }
   .project-details
   {
     width:50%;
@@ -435,6 +464,11 @@ figure, nav, ol, li
 
 @media screen and (max-width:479px)
 {
+  h1
+  {
+    font-size: 1em;
+    margin-right:15em;
+  }
   .header
   {
     display: block;
@@ -517,14 +551,14 @@ figure, nav, ol, li
     margin-top: 0;
   }
   h2
-{
+  {
   color:#026fff;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 2.1em;
-}
   }
+}
 
 @media screen and (max-width:320px)
 {
@@ -563,32 +597,32 @@ figure, nav, ol, li
     border:1px solid transparent;
   }
   h2
-{
+  {
   color:#026fff;
   text-transform: uppercase;
   font-weight: bold;
   font-size: .9em;
   margin-bottom: 1.8em;
-}
-.project-title
-{
+  }
+  .project-title
+  {
   font-size: 1em;
   margin: 5px;
   font-family:'Abel', sans-serif;
   font-weight: bold;
-}
-.project-subtitle, .project-date, .project-url
-{
+  }
+  .project-subtitle, .project-date, .project-url
+  {
   font-family: 'Abel', sans-serif;
   font-size: .6em;
   font-weight: bold;
   margin: 10px 0px 0px 6px;
-}
-.project-description
-{
+  }
+  .project-description
+  {
   font-size: .6em;
   margin: 10px 0px 5px 6px;
-}
+  }
 }
 
 
